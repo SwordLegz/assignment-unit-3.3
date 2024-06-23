@@ -63,7 +63,7 @@ const negatives = [];
 const zeroes = []; 
 console.log('Separate supply changes:', supplyChanges);
 
-for (let i=0; i<supplyChanges.length; i++); {
+for (let i=0; i<supplyChanges.length; i++) {
   if (supplyChanges[i]> 0) {
     positives.push(supplyChanges[i]);
 
