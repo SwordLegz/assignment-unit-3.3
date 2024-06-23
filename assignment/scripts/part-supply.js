@@ -7,7 +7,7 @@ console.log('****** Part Supply *******');
 
 console.log('1. Create partsNeeded:');
 let partsNeeded = 40;
-console.log(partsNeeded);
+console.log('Parts Needed:', partsNeeded);
 
 //// DONE
 
@@ -18,7 +18,6 @@ console.log('2. Create supplyChanges:');
 let supplyChanges = ['3', '5', '-6', '0', '7', '11'];
 console.log('Supply Changes:', supplyChanges);
 
-//// DONE
 
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
@@ -31,9 +30,9 @@ console.log('Second item is:', secondItem);
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');
-let removedItem = [5];
-supplyChanges.pop();
-console.log('Item Removed', supplyChanges);
+let removedItem = supplyChanges.pop();
+console.log('Last Item Removed:', removedItem);
+console.log('Supply Changes are now:', supplyChanges)
 
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
@@ -53,9 +52,9 @@ console.log('Item Added', supplyChanges);
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
-let positives = [];
-let negatives = [];
-let zeros = [];
+// let positives = [];
+// let negatives = [];
+// let zeros = [];
 
 
 
@@ -70,7 +69,7 @@ console.log('7. Looping through supplyChanges to populate more arrays with posit
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
-let totalParts = 0;
+// let totalParts = 0;
 
 
 
@@ -86,8 +85,8 @@ let totalParts = 0;
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
-let parts = 572;
-let boxesFilled = 0;
+// let parts = 572;
+// let boxesFilled = 0;
 
 
 
