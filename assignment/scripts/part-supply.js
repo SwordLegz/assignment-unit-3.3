@@ -16,7 +16,7 @@ console.log('Parts Needed:', partsNeeded);
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
 
-let supplyChanges = [3, 5, -6, 0, 7, 11];
+const supplyChanges = [3, 5, -6, 0, 7, 11];
 console.log('Supply Changes:', supplyChanges);
 
 //// DONE
@@ -35,7 +35,6 @@ console.log('Second item is:', secondItem);
 console.log('4. Remove the last value from supplyChanges:');
 
 let removedItem = supplyChanges.pop();
-supplyChanges.pop();
 console.log('Last Item Removed:', supplyChanges);
 console.log('Removed Last Item and stored in its own variable');
 
@@ -59,9 +58,41 @@ console.log('Item Added', supplyChanges);
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
-let positives = [];
-let negatives = [];
-let zeros = [];
+const positives = [];
+const negatives = [];
+const zeros = []; 
+console.log('Separate supply changes:', supplyChanges);
+
+for (const change of supplyChanges) {
+  if (change > 0) {
+    positives.push(change);
+    console.log('Pushing into Positives');
+  }
+  else if (change < 0) {
+    negatives.push(change);
+  }
+  else { 
+    zeros.push(change);
+  }
+}
+
+console.log('Positives', positives);
+console.log('Negatives', negatives);
+console.log('Zeros', zeros);
+
+// maybe??
+// for (let i=0; i>0;)
+
+// for (i = 1:length);
+// positive = sum(i>0)
+// negative = sum(i<0)
+// zero = sum(i==0)
+// maybe??
+// for (i = 1:length);{
+//     positive = positive + (supplyChanges(i)>0);
+//     negative = negative + (supplyChanges(i)<0);
+//     zero = zero + (supplyChanges(i)==0);
+// }
 
 
 
