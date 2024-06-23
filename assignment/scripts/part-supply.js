@@ -60,25 +60,25 @@ console.log('Item Added', supplyChanges);
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
 const positives = [];
 const negatives = [];
-const zeros = []; 
+const zeroes = []; 
 console.log('Separate supply changes:', supplyChanges);
 
 for (const change of supplyChanges) {
   if (change > 0) {
     positives.push(change);
-    console.log('Pushing into Positives');
+
   }
   else if (change < 0) {
     negatives.push(change);
   }
   else { 
-    zeros.push(change);
+    zeroes.push(change);
   }
 }
 
 console.log('Positives', positives);
 console.log('Negatives', negatives);
-console.log('Zeros', zeros);
+console.log('Zeroes', zeroes);
 
 // maybe??
 // for (let i=0; i>0;)
